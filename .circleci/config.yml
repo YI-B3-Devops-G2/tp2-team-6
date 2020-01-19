@@ -45,7 +45,7 @@ jobs:
       - run:
           name: Publish Node Image to Docker Hub
           command: |
-            echo $PASS | base64 --decode | docker login -u $USER --password $PASS |
+            docker login -u $USER --password $PASS
             docker push bambin401/${PROJECT_NAME}_nodejs:latest
 
 workflows:
