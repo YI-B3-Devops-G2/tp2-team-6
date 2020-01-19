@@ -22,7 +22,7 @@ jobs:
           command: docker images -a
       - run:
           name: Save nodejs Docker image
-          command: docker save -o ./${PROJECT_NAME}_nodejs.tar project_nodejs
+          command: docker save -o ./${PROJECT_NAME}_nodejs.tar ${PROJECT_NAME}_nodejs
       - persist_to_workspace:
           root: .
           paths:
@@ -41,7 +41,7 @@ jobs:
           command: docker images -a
       - run:
           name: Rename nodejs image
-          command: docker tag project_nodejs bambin401/${PROJECT_NAME}_nodejs:latest
+          command: docker tag ${PROJECT_NAME}_nodejs bambin401/${PROJECT_NAME}_nodejs:latest
       - run:
           name: Publish Node Image to Docker Hub
           command: |
