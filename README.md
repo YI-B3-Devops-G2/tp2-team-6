@@ -19,7 +19,7 @@
 Pour installer le TP, j'ai besoin de rentrer la commande suivante dans un terminal de commande <br>
 ``docker pull bambin401/tp2-team-6_nodejs``
 
-Si on souhaite maintenant utiliser que l'API, il suffit de faire(toujour dans le terminal de commande): <br>
+Si on souhaite maintenant utiliser l'API, il suffit de faire(toujour dans le terminal de commande): <br>
 ``docker run -p 8080:8080 bambin401/tp2-team-6_nodejs``
 
 ## Utilisation
