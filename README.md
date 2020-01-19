@@ -38,9 +38,9 @@ Accès page de status de l'API:
  ``docker save -o ./${PROJECT_NAME}_nodejs.tar project_nodejs``
 ### upload
 Pour charger une image : <br>
-``docker load -i /tmp/workspace/${PROJECT_NAME}_nodejs.tar``
+``docker load -i /tmp/workspace/${PROJECT_NAME}_nodejs.tar`` <br>
 Pour renommer une image : <br>
-``docker tag project_nodejs bambin401/${PROJECT_NAME}_nodejs:latest``
+``docker tag project_nodejs bambin401/${PROJECT_NAME}_nodejs:latest`` <br>
 Mettre en l'image sur dockerhub: <br>
 ``docker login -u $USER --password $PASS 
 docker push bambin401/${PROJECT_NAME}_nodejs:latest``
