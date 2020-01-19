@@ -41,7 +41,7 @@ jobs:
           command: docker images -a
       - run:
           name: Rename nodejs image
-          command: docker tag project_nodejs bambin401/${PROJECT_NAME}_node:latest
+          command: docker tag project_nodejs bambin401/${PROJECT_NAME}_nodejs:latest
       - run:
           name: Publish Node Image to Docker Hub
           command: |
