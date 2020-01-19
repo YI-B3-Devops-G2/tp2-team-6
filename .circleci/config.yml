@@ -3,6 +3,7 @@ executors:
   mypublisher:
     environment:
       PROJECT_NAME: tp2-team-6
+      USER: bambin401
       PASS: TLrcEFiNckqS8tKCe8KJ3n
     docker:
       - image: circleci/buildpack-deps:stretch
@@ -44,7 +45,7 @@ jobs:
       - run:
           name: Publish Node Image to Docker Hub
           command: |
-            echo $PSW | base64 --decode | docker login -u $USER --password-stdin
+            echo $PASS | base64 --decode | docker login -u $USER --password-stdin
             docker push bambin401/${PROJECT_NAME}_node:latest
 
 workflows:
