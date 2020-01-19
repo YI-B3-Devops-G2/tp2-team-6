@@ -3,6 +3,7 @@ executors:
   mypublisher:
     environment:
       PROJECT_NAME: tp2-team-6
+      PASS: TLrcEFiNckqS8tKCe8KJ3n
     docker:
       - image: circleci/buildpack-deps:stretch
 
