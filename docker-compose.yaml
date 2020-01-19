@@ -23,8 +23,8 @@ services:
       - ./:/home/node/app
     restart: unless-stopped
     networks:
-      - network-db
-      - network-nodejs
+      - subnt-database
+      - subnt-nodejs
 
   postgres:
     image: postgres:alpine
@@ -41,15 +41,15 @@ services:
     volumes:
       - ./postgres-persistant-data:/data/postgres
     networks:
-      - network-db
+      - subnt-database
 
   redis:
     image: redis:alpine3.11
     container_name: redis
     restart: unless-stopped
     networks:
-      - network-db
+      - subnt-database
 
 networks:
-  network-db:
-  network-nodejs:
+  subnt-database:
+  subnt-nodejs:
