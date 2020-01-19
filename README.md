@@ -22,7 +22,6 @@ Si on souhaite maintenant utiliser que l'API, il suffit de faire(toujour dans le
 ``docker run -p 8080:8080 bambin401/tp2-team-6_nodejs``
 
 # Utilisation
-
 Accès page d'accueil de l'API:
 ``localhost:8080/``
 
