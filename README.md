@@ -41,7 +41,7 @@ Pour charger une image : <br>
 ``docker load -i /tmp/workspace/${PROJECT_NAME}_nodejs.tar`` <br>
 Pour renommer une image : <br>
 ``docker tag project_nodejs bambin401/${PROJECT_NAME}_nodejs:latest`` <br>
-Mettre en l'image sur dockerhub: <br>
+Mettre l'image sur dockerhub: <br>
 ``docker login -u $USER --password $PASS 
 docker push bambin401/${PROJECT_NAME}_nodejs:latest``
 
