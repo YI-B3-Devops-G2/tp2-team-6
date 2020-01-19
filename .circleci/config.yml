@@ -4,7 +4,7 @@ executors:
     environment:
       PROJECT_NAME: tp2-team-6
       USER: "bambin401"
-      PASS: "TLrcEFiNckqS8tKCe8KJ3n"
+      PASS: "2fc885df-fbb6-4596-812b-00b125a04ce4"
     docker:
       - image: circleci/buildpack-deps:stretch
 
